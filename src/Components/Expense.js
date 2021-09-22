@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import Filter from "./Filter";
 import Card from "../UI Components/Card";
 import ExpenseList from "./ExpenseList";
@@ -7,12 +7,14 @@ import ExpenseChart from "./ExpenseChart";
 const Expense = (props) => {
   const [filterYear, setFilterYear] = useState("2021");
   const [expense, setExpense] = useState([]);
+  const [isLoading, setisLoading] = useState(false);
 
   const FilterYear = (year) => {
     setFilterYear(year);
   };
 
   useEffect(() => {
+    setisLoading(true);
     const fetchData = async () => {
       const response = await fetch(
         "https://expense-tracker-d1e64-default-rtdb.firebaseio.com/Expense.json"
@@ -32,6 +34,7 @@ const Expense = (props) => {
       }
 
       setExpense(arr);
+      setisLoading(false);
     };
 
     fetchData();
@@ -41,11 +44,18 @@ const Expense = (props) => {
     return new Date(element.date).getFullYear().toString() === filterYear;
   });
 
+  const loading = <p className="loading">Loading....</p>;
+
   return (
     <Card>
-      <Filter selected={filterYear} onchangeHandler={FilterYear} />
-      <ExpenseChart yearData={selectedYearData} />
-      <ExpenseList items={selectedYearData} />
+      {isLoading && loading}
+      {!isLoading && (
+        <Fragment>
+          <Filter selected={filterYear} onchangeHandler={FilterYear} />
+          <ExpenseChart yearData={selectedYearData} />
+          <ExpenseList items={selectedYearData} />
+        </Fragment>
+      )}
     </Card>
   );
 };
