@@ -1,0 +1,99 @@
+.form-card {
+  background-color: #7968d3;
+  padding: 20px;
+  width: 60%;
+  margin: 40px auto;
+  border-radius: 15px;
+}
+
+.form-align {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+  height: 35px;
+  width: 350px;
+  margin: 13px auto;
+  outline: none;
+  border: solid 1px #7968d3;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.close {
+  color: white;
+  background-color: transparent;
+  border: transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+input[type="date" i],
+input[type="number" i],
+input[type="text" i] {
+  padding: 3px;
+  padding-inline-start: 10px;
+}
+
+.add-button {
+  padding: 18px 30px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: solid 1px #4b0082;
+  background-color: #4b0082;
+  color: white;
+  margin-top: 13px;
+}
+
+.align-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-align {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+  .form-align {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .align-button {
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    width: 95.3%;
+  }
+}
+
+@media (max-width: 779px) {
+  .form-card {
+    width: 70%;
+  }
+}
+
+@media (max-width: 657px) {
+  .form-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 565px) {
+  .form-card {
+    width: 90%;
+  }
+}
+@media (max-width: 395px) {
+  .form-card {
+    width: 88%;
+  }
+}

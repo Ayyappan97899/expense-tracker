@@ -1,0 +1,23 @@
+.chart-card {
+  background-color: rgb(253, 228, 232);
+  width: 90%;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+@media (max-width: 502px) {
+  p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 413px) {
+  p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 413px) {
+  p {
+    font-size: 11px;
+  }
+}

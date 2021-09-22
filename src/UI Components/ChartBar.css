@@ -1,0 +1,45 @@
+.bar-background {
+  background-color: #b3a5fa;
+  width: 15px;
+  height: 150px;
+  border-radius: 15px;
+  border: solid 1px #4b0082;
+  margin-left: 4px;
+  display: flex;
+}
+
+.bar {
+  background-color: #4b0082;
+  width: 15px;
+  border-radius: 15px;
+  margin-top: auto;
+}
+
+.bar-align {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 502px) {
+  .bar-background {
+    width: 13px;
+    height: 150px;
+  }
+}
+@media (max-width: 413px) {
+  .bar-background {
+    width: 12px;
+    height: 150px;
+  }
+}
+@media (max-width: 395px) {
+  .bar-background {
+    width: 11px;
+    height: 150px;
+  }
+}

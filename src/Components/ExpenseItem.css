@@ -1,0 +1,91 @@
+.expense-card {
+  background-color: #454545;
+  box-shadow: 0 9px 5px #2e2e2e;
+  width: 90%;
+  margin: 20px auto 20px auto;
+  padding: 15px;
+  border-radius: 18px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
+
+.amount-background {
+  margin-left: auto;
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  border: solid 1px white;
+}
+
+.amount {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.date {
+  text-align: center;
+  background-color: #2e2e2e;
+  padding: 12px;
+  border-radius: 12px;
+  border: solid 1px white;
+  color: white;
+}
+
+.day {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.month {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.year {
+  margin-bottom: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media (max-width: 413px) {
+  .amount-background {
+    padding: 3% 6%;
+  }
+  .title {
+    margin-left: 20px;
+  }
+  .date {
+    padding: 10px;
+  }
+  .amount {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .day {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .month {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .year {
+    margin-bottom: 5px;
+  }
+}

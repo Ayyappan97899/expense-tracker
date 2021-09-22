@@ -1,0 +1,13 @@
+.align-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.add-btn {
+  padding: 18px 30px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: solid 1px #4b0082;
+  background-color: #4b0082;
+  color: white;
+}

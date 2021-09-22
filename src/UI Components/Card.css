@@ -1,0 +1,29 @@
+.card {
+  background-color: #2e2e2e;
+  width: 60%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #2e2e2e;
+}
+
+@media (max-width: 779px) {
+  .card {
+    width: 70%;
+  }
+}
+@media (max-width: 657px) {
+  .card {
+    width: 80%;
+  }
+}
+@media (max-width: 565px) {
+  .card {
+    width: 90%;
+  }
+}
+@media (max-width: 395px) {
+  .card {
+    width: 88%;
+  }
+}
